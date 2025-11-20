@@ -50,7 +50,7 @@ class FireCreature(Creature):
         
     def emit_fire(self, new_fire_level):
         self.fire_level = new_fire_level
-        print("")
+        print(f"{self.name} emit fire for level of {self.fire_level}.")
         
     def attack(self, target):
         if not self.is_alive():
